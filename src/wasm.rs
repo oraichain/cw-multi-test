@@ -29,7 +29,7 @@ use anyhow::{bail, Context, Result as AnyResult};
 const CONTRACTS: Map<&Addr, ContractData> = Map::new("contracts");
 
 pub const NAMESPACE_WASM: &[u8] = b"wasm";
-const CONTRACT_ATTR: &str = "_contract_addr";
+pub const CONTRACT_ATTR: &str = "_contract_address";
 
 #[derive(Clone, std::fmt::Debug, PartialEq, Eq, JsonSchema)]
 pub struct WasmSudo {
